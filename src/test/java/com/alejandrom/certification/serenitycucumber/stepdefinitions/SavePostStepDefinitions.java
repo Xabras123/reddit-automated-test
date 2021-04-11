@@ -29,7 +29,7 @@ public class SavePostStepDefinitions {
     @When("^user wants to save the post number (\\d+) from the home page$")
     public void userWantsToSaveThePostNumberFromTheHomePage(int arg1) {
         // Write code here that turns the phrase above into concrete actions
-        postTitle = redditPage.savePost(0);
+        postTitle = redditPage.clickSavePostButton(0);
 
     }
 
@@ -39,8 +39,8 @@ public class SavePostStepDefinitions {
         boolean postIsSaved = false;
         redditPage.enterProfile();
         postIsSaved = redditPage.checkSavedPost(3, postTitle);
+        redditPage.clickSavePostButton(0);
         assertTrue(postIsSaved);
-
 
     }
 

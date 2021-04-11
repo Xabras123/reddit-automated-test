@@ -2,7 +2,6 @@ package com.alejandrom.certification.serenitycucumber.steps;
 
 import com.alejandrom.certification.serenitycucumber.userinterface.ProfilePage;
 import com.alejandrom.certification.serenitycucumber.userinterface.RedditPage;
-import com.alejandrom.certification.serenitycucumber.userinterface.SavePost;
 import com.alejandrom.certification.serenitycucumber.userinterface.webcomponents.PostsFeed;
 import net.thucydides.core.annotations.Step;
 
@@ -12,28 +11,28 @@ public class Reddit {
     PostsFeed postsFeed;
     ProfilePage profilePage;
 
-    @Step
+    @Step("Abrir el navegador en la pagina de login de reddit")
     public void isTheHomePage(){
         redditPage.open();
     }
 
-    @Step
+    @Step("Ingresar credenciales para hacer un login correcto")
     public void enterCredentials(String username, String password){
         redditPage.singInWithCredentials(username, password);
     }
 
-    @Step
-    public String savePost(int postIndexToSelect){
-        return postsFeed.selectFeedPost(postIndexToSelect);
+    @Step("Guardar el primer post visible en el feed de la pagina principal")
+    public String clickSavePostButton(int postIndexToSelect){
+        return postsFeed.selectFeedPostSaveButton(postIndexToSelect);
     }
 
-    @Step
+    @Step("Ingresar el perfil de usuario")
     public void enterProfile(){
         redditPage.enterProfile();
 
     }
 
-    @Step
+    @Step("Revisar que el post guardado se encuentre efectivamente en el perfil de usuario, en la zona de guardados")
     public boolean checkSavedPost(int postCategoryIndexToSelect, String postTitle){
         return profilePage.searchPostInPostsCategories(postCategoryIndexToSelect, postTitle);
     }

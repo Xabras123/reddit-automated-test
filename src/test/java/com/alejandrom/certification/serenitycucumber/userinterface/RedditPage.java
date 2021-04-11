@@ -26,7 +26,8 @@ public class RedditPage extends PageObject{
 
     }
     public void selectPostFromMainFeedback(int indexToSelect){
-        postsFeedComponent.selectFeedPost(indexToSelect);
+
+        postsFeedComponent.selectFeedPostSaveButton(indexToSelect);
     }
 
     public void enterProfile(){

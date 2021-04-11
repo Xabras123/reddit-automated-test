@@ -14,14 +14,26 @@ public class PostsFeed extends PageObject {
     List<WebElementFacade> savePostButtons;
 
     @FindBy(xpath = "//h3[@class='_eYtD2XCVieq6emjKBH3m']")
-    List<WebElementFacade> postTitles;
+    List<WebElementFacade> postsTitles;
 
-    public String selectFeedPost(int postIndexToSelect) {
+
+
+    public String selectFeedPostSaveButton(int postIndexToSelect) {
 
         postIndexToSelect = validateIndex(postIndexToSelect, 0, savePostButtons.size() - 1);
         savePostButtons.get(postIndexToSelect).waitUntilClickable().click();
-        return postTitles.get(postIndexToSelect).waitUntilClickable().getText();
+        return postsTitles.get(postIndexToSelect).waitUntilClickable().getText();
 
+    }
+
+    public boolean findPostTitle(String postTitleToFind) {
+
+        for(WebElementFacade postTitle : postsTitles){
+
+            if(postTitle.getText().equals(postTitleToFind))
+                return true;
+        }
+        return false;
     }
 
 

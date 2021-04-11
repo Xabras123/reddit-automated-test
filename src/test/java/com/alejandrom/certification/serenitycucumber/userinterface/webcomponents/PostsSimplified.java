@@ -13,10 +13,7 @@ public class PostsSimplified extends PageObject {
 
     public boolean findPostTitle(String postTitleToFind) {
 
-        System.out.println("adasdasdasd   " + postTitleToFind);
         for(WebElementFacade postTitle : postsTitles){
-
-            System.out.println("evaluation " +postTitle.getText() +" "+ postTitleToFind);
 
             if(postTitle.getText().equals(postTitleToFind))
                 return true;
