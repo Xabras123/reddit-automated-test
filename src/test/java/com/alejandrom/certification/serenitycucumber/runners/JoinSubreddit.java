@@ -1,10 +1,9 @@
 package com.alejandrom.certification.serenitycucumber.runners;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.PendingException;
 import cucumber.api.SnippetType;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 

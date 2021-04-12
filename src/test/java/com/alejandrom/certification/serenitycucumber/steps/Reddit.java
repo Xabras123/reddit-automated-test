@@ -8,14 +8,15 @@ import net.thucydides.core.annotations.Step;
 
 public class Reddit {
 
-    RedditPage redditPage;
-    PostsFeed postsFeed;
-    ProfilePage profilePage;
-    SubredditPage subredditPage;
+    private RedditPage redditPage;
+    private ProfilePage profilePage;
+    private SubredditPage subredditPage;
+    private PostsFeed postsFeed;
 
     @Step("Abrir el navegador en la pagina de login de reddit")
     public void isTheHomePage(){
         redditPage.open();
+
     }
 
     @Step("Ingresar credenciales para hacer un login correcto")
@@ -30,12 +31,13 @@ public class Reddit {
 
     @Step("Ingresar el perfil de usuario")
     public void enterProfile(){
-        redditPage.enterProfile();
 
+        redditPage.enterProfile();
     }
 
     @Step("Revisar que el post guardado se encuentre efectivamente en el perfil de usuario, en la zona de guardados")
     public boolean checkSavedPost(int postCategoryIndexToSelect, String postTitle){
+
         return profilePage.searchPostInPostsCategories(postCategoryIndexToSelect, postTitle);
     }
 
@@ -66,6 +68,7 @@ public class Reddit {
 
     @Step("Se refresca la pagina en la que se encuentre")
     public void refreshCurrentPage(){
+
         redditPage.refreshCurrentPage();
     }
 
