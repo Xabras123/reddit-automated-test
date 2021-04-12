@@ -1,20 +1,28 @@
 com/alejandrom/certification/serenitycucumber/userinterface/webcomponents/PostsSimplified.java
  com.alejandrom.certification.serenitycucumber.userinterface.webcomponents.PostsSimplified
-com/alejandrom/certification/serenitycucumber/stepdefinitions/SavePostStepDefinitions.java
- com.alejandrom.certification.serenitycucumber.stepdefinitions.SavePostStepDefinitions
+com/alejandrom/certification/serenitycucumber/userinterface/SavePost.java
+ com.alejandrom.certification.serenitycucumber.userinterface.SavePost
 com/alejandrom/certification/serenitycucumber/userinterface/ProfilePage.java
  com.alejandrom.certification.serenitycucumber.userinterface.ProfilePage
 com/alejandrom/certification/serenitycucumber/utils/Utils.java
  com.alejandrom.certification.serenitycucumber.utils.Utils
-com/alejandrom/certification/serenitycucumber/userinterface/webcomponents/Login.java
- com.alejandrom.certification.serenitycucumber.userinterface.webcomponents.Login
-com/alejandrom/certification/serenitycucumber/runners/SavePost.java
- com.alejandrom.certification.serenitycucumber.runners.SavePost
-com/alejandrom/certification/serenitycucumber/userinterface/RedditPage.java
- com.alejandrom.certification.serenitycucumber.userinterface.RedditPage
-com/alejandrom/certification/serenitycucumber/steps/Reddit.java
- com.alejandrom.certification.serenitycucumber.steps.Reddit
 com/alejandrom/certification/serenitycucumber/userinterface/webcomponents/PostsFeed.java
  com.alejandrom.certification.serenitycucumber.userinterface.webcomponents.PostsFeed
-com/alejandrom/certification/serenitycucumber/userinterface/SavePost.java
- com.alejandrom.certification.serenitycucumber.userinterface.SavePost
+com/alejandrom/certification/serenitycucumber/runners/SavePost.java
+ com.alejandrom.certification.serenitycucumber.runners.SavePost
+com/alejandrom/certification/serenitycucumber/runners/JoinSubreddit.java
+ com.alejandrom.certification.serenitycucumber.runners.JoinSubreddit
+com/alejandrom/certification/serenitycucumber/steps/Reddit.java
+ com.alejandrom.certification.serenitycucumber.steps.Reddit
+com/alejandrom/certification/serenitycucumber/userinterface/SubredditPage.java
+ com.alejandrom.certification.serenitycucumber.userinterface.SubredditPage
+com/alejandrom/certification/serenitycucumber/userinterface/webcomponents/Login.java
+ com.alejandrom.certification.serenitycucumber.userinterface.webcomponents.Login
+com/alejandrom/certification/serenitycucumber/userinterface/webcomponents/RedditHeader.java
+ com.alejandrom.certification.serenitycucumber.userinterface.webcomponents.RedditHeader
+com/alejandrom/certification/serenitycucumber/stepdefinitions/SavePostStepDefinitions.java
+ com.alejandrom.certification.serenitycucumber.stepdefinitions.SavePostStepDefinitions
+com/alejandrom/certification/serenitycucumber/userinterface/RedditPage.java
+ com.alejandrom.certification.serenitycucumber.userinterface.RedditPage
+com/alejandrom/certification/serenitycucumber/stepdefinitions/JoinSubredditStepDefinitions.java
+ com.alejandrom.certification.serenitycucumber.stepdefinitions.JoinSubredditStepDefinitions
